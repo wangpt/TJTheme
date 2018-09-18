@@ -1,4 +1,4 @@
-NORMAL   NIGHT    RED YELLOW
+NORMAL   NIGHT    RED     YELLOW
 #ffffff  #343434  #ff0000 #ffff00 TJBG
 #ffffff  #343434  #fafafa #ffff00 BG
 #aaaaaa  #313131  #aaaaaa #ffff00 SEP

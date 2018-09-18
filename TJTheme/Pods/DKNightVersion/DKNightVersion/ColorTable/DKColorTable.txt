@@ -1,10 +1,11 @@
-NORMAL   NIGHT    RED
-#ffffff  #343434  #fafafa BG
-#aaaaaa  #313131  #aaaaaa SEP
-#0000ff  #ffffff  #fa0000 TINT
-#000000  #ffffff  #000000 TEXT
-#ffffff  #444444  #ffffff BAR
-#f0f0f0  #222222  #dedede HIGHLIGHTED
+NORMAL   NIGHT    RED     YELLOW
+#ffffff  #343434  #ff0000 #ffff00 TJBG
+#ffffff  #343434  #fafafa #ffff00 BG
+#aaaaaa  #313131  #aaaaaa #ffff00 SEP
+#0000ff  #ffffff  #fa0000 #ffff00 TINT
+#000000  #ffffff  #000000 #ffff00 TEXT
+#ffffff  #444444  #ffffff #ffff00 BAR
+#f0f0f0  #222222  #dedede #ffff00 HIGHLIGHTED
 
 
   

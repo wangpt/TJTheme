@@ -37,7 +37,7 @@
     UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 200, 50)];
     [self.view addSubview:titleLabel];
     titleLabel.textAlignment = NSTextAlignmentCenter;
-    titleLabel.center = CGPointMake(self.view.frame.size.width / 2, CGRectGetMaxY(button.frame) + 160);
+    titleLabel.center = CGPointMake(self.view.frame.size.width / 2, CGRectGetMaxY(button.frame) + 50);
     titleLabel.text = @"演示文字";
     titleLabel.dk_textColorPicker = DKColorPickerWithRGB(0x343434, 0xffffff, 0xffffff,0x343434);
     
