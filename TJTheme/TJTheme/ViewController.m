@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 #import <DKNightVersion/DKNightVersion.h>
-
+#import "TJThemeManager.h"
+#import "ThemeRedTemplate.h"
+#import "ThemeYellowTemplate.h"
 @interface ViewController ()
 
 @end
@@ -46,8 +48,34 @@
     imageView.dk_imagePicker = DKImagePickerWithNames(@"night", @"normal", @"night1",@"normal1");
     imageView.dk_alphaPicker = DKAlphaPickerWithAlphas(1.f, 0.8f, 0.1f,1.f);
     [self.view addSubview:imageView];
-}
+    
+    UISwitch *switchFunc = [[UISwitch alloc]initWithFrame:CGRectMake(0, 0, 100, 20)];
+    [self.view addSubview:switchFunc];
+    switchFunc.center = CGPointMake(self.view.frame.size.width / 2,  50);
+    [switchFunc addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
+    //添加通知，有且只能有一个
+    [TJThemeManager sharedInstance].themeChangedBlock = ^(NSObject<TJThemeProtocol> *themeBeforeChanged, NSObject<TJThemeProtocol> *themeAfterChanged) {
+        NSLog(@"%@",themeAfterChanged);
+        if ([themeAfterChanged isKindOfClass:[ThemeYellowTemplate class]]) {
+            ThemeYellowTemplate *template = (ThemeYellowTemplate *)themeAfterChanged;
+            NSLog(@"%@",template.themeImage);
+        }else if ([themeAfterChanged isKindOfClass:[ThemeRedTemplate class]]){
+            ThemeRedTemplate *template = (ThemeRedTemplate *)themeAfterChanged;
+            NSLog(@"%@",template.themeImage);
+        }
+    };
 
+}
+- (void)switchAction:(UISwitch *)sl{
+    if (sl.on) {
+        [TJThemeManager sharedInstance].currentTheme = [ThemeRedTemplate new];
+
+    }else{
+        [TJThemeManager sharedInstance].currentTheme = [ThemeYellowTemplate new];
+    }
+    self.view.backgroundColor = [TJThemeManager sharedInstance].currentTheme.themeBgColor;
+    
+}
 - (void)buttconClick:(UIButton *)button{
     switch (button.tag) {
         case 0:

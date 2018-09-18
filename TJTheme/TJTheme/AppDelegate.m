@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "TJThemeManager.h"
 @interface AppDelegate ()
 
 @end
