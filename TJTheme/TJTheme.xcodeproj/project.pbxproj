@@ -13,6 +13,7 @@
 		2B4031E6214FE94B0017645C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4031E5214FE94B0017645C /* Assets.xcassets */; };
 		2B4031E9214FE94B0017645C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4031E7214FE94B0017645C /* LaunchScreen.storyboard */; };
 		2B4031EC214FE94B0017645C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4031EB214FE94B0017645C /* main.m */; };
+		2B458204215132E000868E0E /* DKColorTable.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2B458203215132DF00868E0E /* DKColorTable.txt */; };
 		B443285C1A6D6A6D259B3670 /* libPods-TJTheme.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A003C0BFBD34526626F9B6C /* libPods-TJTheme.a */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		2B4031E8214FE94B0017645C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B4031EA214FE94B0017645C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B4031EB214FE94B0017645C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B458203215132DF00868E0E /* DKColorTable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DKColorTable.txt; sourceTree = "<group>"; };
 		44E9A9714F700FBF42263D12 /* Pods-TJTheme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TJTheme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TJTheme/Pods-TJTheme.debug.xcconfig"; sourceTree = "<group>"; };
 		4A003C0BFBD34526626F9B6C /* libPods-TJTheme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TJTheme.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7388413A9F5653DA18E99B8B /* Pods-TJTheme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TJTheme.release.xcconfig"; path = "Pods/Target Support Files/Pods-TJTheme/Pods-TJTheme.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		2B4031DB214FE94A0017645C /* TJTheme */ = {
 			isa = PBXGroup;
 			children = (
+				2B458203215132DF00868E0E /* DKColorTable.txt */,
 				2B4031DC214FE94A0017645C /* AppDelegate.h */,
 				2B4031DD214FE94A0017645C /* AppDelegate.m */,
 				2B4031DF214FE94A0017645C /* ViewController.h */,
@@ -106,7 +109,7 @@
 				2B4031D5214FE94A0017645C /* Sources */,
 				2B4031D6214FE94A0017645C /* Frameworks */,
 				2B4031D7214FE94A0017645C /* Resources */,
-				F5AA64CA66BF909B07CAB6AE /* [CP] Copy Pods Resources */,
+				F81CED7C97F6E1E8C883CACF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B458204215132E000868E0E /* DKColorTable.txt in Resources */,
 				2B4031E9214FE94B0017645C /* LaunchScreen.storyboard in Resources */,
 				2B4031E6214FE94B0017645C /* Assets.xcassets in Resources */,
 				2B4031E4214FE94A0017645C /* Main.storyboard in Resources */,
@@ -168,15 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-TJTheme-checkManifestLockResult.txt",
 			);
@@ -185,20 +185,16 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F5AA64CA66BF909B07CAB6AE /* [CP] Copy Pods Resources */ = {
+		F81CED7C97F6E1E8C883CACF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TJTheme/Pods-TJTheme-resources.sh",
 				"${PODS_ROOT}/DKNightVersion/DKNightVersion/ColorTable/DKColorTable.txt",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DKColorTable.txt",
 			);

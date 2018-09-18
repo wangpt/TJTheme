@@ -14,7 +14,7 @@ PODS:
     - DKNightVersion/Core
 
 DEPENDENCIES:
-  - DKNightVersion
+  - DKNightVersion (= 2.4.3)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -23,6 +23,6 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   DKNightVersion: eaa80cc4014b4bae7d4b535fd87ecc6a3c2767b3
 
-PODFILE CHECKSUM: f258c8738f07c9d81e081edbc902ad90b659ee1a
+PODFILE CHECKSUM: c0d75666e614f4e68879c8ca3953a422ddab020e
 
 COCOAPODS: 1.5.3

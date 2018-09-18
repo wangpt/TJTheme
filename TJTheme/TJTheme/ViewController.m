@@ -40,6 +40,12 @@
     titleLabel.center = CGPointMake(self.view.frame.size.width / 2, CGRectGetMaxY(button.frame) + 160);
     titleLabel.text = @"演示文字";
     titleLabel.dk_textColorPicker = DKColorPickerWithRGB(0x343434, 0xffffff, 0xffffff,0x343434);
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    imageView.center = CGPointMake(self.view.frame.size.width / 2, CGRectGetMaxY(titleLabel.frame) + 50);
+    imageView.dk_imagePicker = DKImagePickerWithNames(@"night", @"normal", @"night1",@"normal1");
+    imageView.dk_alphaPicker = DKAlphaPickerWithAlphas(1.f, 0.8f, 0.1f,1.f);
+    [self.view addSubview:imageView];
 }
 
 - (void)buttconClick:(UIButton *)button{
